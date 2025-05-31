@@ -1,81 +1,120 @@
-# 🏠 Prediksi Harga Rumah Sederhana - Boston Housing (Streamlit + Scikit-learn)
+# 🏡 Simple House Price Prediction - Boston Housing (Streamlit + Scikit-learn)
 
-Proyek ini bertujuan untuk membangun model machine learning sederhana menggunakan regresi linier untuk memprediksi harga rumah berdasarkan fitur-fitur lingkungan dan demografi dari dataset **Boston Housing**. Selain itu, proyek ini juga menyediakan antarmuka demo interaktif menggunakan **Streamlit**.
-
----
-
-## 📊 Dataset
-
-Dataset yang digunakan adalah **Boston Housing Dataset**, berisi informasi mengenai berbagai fitur perumahan di daerah Boston, seperti:
-- Tingkat kejahatan (`CRIM`)
-- Proporsi lahan hunian (`ZN`)
-- Nitrogen oksida (`NOX`)
-- Rata-rata jumlah kamar (`RM`)
-- Pajak properti (`TAX`)
-- Dan lainnya...
-
-📥 Sumber dataset: [Kaggle - Boston Housing Dataset](https://www.kaggle.com/datasets/altavish/boston-housing-dataset)
+This project builds a simple machine learning model using linear regression to predict house prices based on demographic and environmental features from the **Boston Housing** dataset. It also includes an interactive web demo using **Streamlit**.
 
 ---
 
-## ⚙️ Teknologi yang Digunakan
+## 📉 Dataset
 
-| Tool | Deskripsi |
-|------|-----------|
-| Python | Bahasa pemrograman utama |
-| pandas | Manipulasi data |
-| scikit-learn | Pemodelan machine learning |
-| matplotlib & seaborn | Visualisasi data |
-| joblib | Menyimpan model |
-| Streamlit | Aplikasi web interaktif |
+The dataset used is the classic **Boston Housing Dataset**, containing information about housing characteristics and neighborhoods in Boston, such as:
+
+* `CRIM`: Per capita crime rate
+* `ZN`: Proportion of residential land zoned
+* `INDUS`: Proportion of non-retail business acres
+* `CHAS`: Charles River dummy variable
+* `NOX`: Nitric oxide concentration
+* `RM`: Average number of rooms
+* `AGE`: Proportion of owner-occupied units built before 1940
+* `DIS`: Distance to employment centers
+* `RAD`: Index of accessibility to radial highways
+* `TAX`: Property tax rate
+* `PTRATIO`: Pupil-teacher ratio
+* `B`: Racial composition
+* `LSTAT`: % lower status population
+* `MEDV`: Median value of owner-occupied homes (target)
 
 ---
 
-## 🚀 Cara Menjalankan Proyek
+## ⚙️ Technologies Used
 
-### 1. Clone repository:
-git clone https://github.com/vierkzme/home-price-prediction
-cd prediction-app
+* **Python**
+* **pandas** & **numpy** for data preprocessing
+* **scikit-learn** for building the model
+* **matplotlib** & **seaborn** for visualization
+* **joblib** for saving the model
+* **Streamlit** for creating the web demo
+
+---
+
+## 🚀 How to Run This Project
+
+### 1. Clone this repository:
+
+```bash
+git clone https://github.com/vierkzme/house-price-prediction
+cd house-price-prediction
+```
 
 ### 2. Install dependencies:
-pip install -r requirements.txt
 
-### 3. Jalankan aplikasi Streamlit:
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit App:
+
+```bash
 streamlit run app.py
+```
 
 ---
 
-📈 Alur Kerja Model
-1. Preprocessing Data:
-- Membersihkan data dan mengisi nilai kosong
-- Menentukan fitur (X) dan target (y)
+## 📊 Model Workflow
 
-2. Pelatihan Model:
-- Menggunakan regresi linier (LinearRegression)
-- Evaluasi dengan MSE dan R² score
+1. **Preprocessing**:
 
-3. Simpan Model:
-- Model disimpan ke file model_prediksi_rumah.pkl menggunakan joblib
+   * Handle missing values
+   * Define features (`X`) and target (`y`)
 
-4. Deploy ke Streamlit:
-- Form input dibuat untuk prediksi berdasarkan parameter real-time
+2. **Train/Test Split**:
 
-🌐 Demo Aplikasi Streamlit
-🔢 Masukkan parameter rumah (jumlah kamar, usia, lokasi, dll)
-📊 Klik "Prediksi Harga Rumah"
-💰 Hasil prediksi akan tampil langsung di layar
+   * Use `train_test_split()` from scikit-learn
 
-📁 Struktur Folder
-├── app.py                       # Aplikasi Streamlit
-├── model_prediksi_rumah.pkl     # File model hasil training
-├── requirements.txt            # Daftar library
-└── README.md                   # Dokumentasi proyek
+3. **Model Training**:
 
-🧠 Hasil & Kesimpulan
-Model regresi linier menghasilkan R² Score ~ 0.74, yang berarti sekitar 74% variasi harga rumah dapat dijelaskan oleh model.
-Streamlit mempermudah proses uji coba model secara real-time oleh pengguna non-teknis.
-Proyek ini cocok untuk pemula dalam memahami alur kerja end-to-end machine learning.
+   * Fit `LinearRegression()` model
+   * Evaluate with MSE and R^2
 
-📄 License
+4. **Save Model**:
+
+   * Save the trained model with `joblib`
+
+5. **Web App Interface**:
+
+   * Built using Streamlit to allow real-time predictions
+
+---
+
+## 🌐 Streamlit App
+
+* Input housing data manually through form inputs.
+* Press "Predict" to get an estimated house price.
+* Results displayed instantly.
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── housing.csv                 # Boston Housing dataset
+├── app.py                      # Streamlit web app
+├── model_prediksi_rumah.pkl   # Trained model
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
+```
+
+---
+
+## 🧠 Results & Conclusion
+
+* The linear regression model achieved **R^2 score of \~0.74**, which is good for a basic model.
+* The Streamlit app makes the model accessible for end-users.
+* This is a great beginner project to understand the end-to-end machine learning process from data to deployment.
+
+---
+
+## 📄 License
+
 MIT License © 2025 – vierkzme
-silakan digunakan, dimodifikasi, dan dibagikan dengan bebas.
+Please feel free to use, modify and share freely.
