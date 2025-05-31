@@ -4,18 +4,6 @@ Proyek ini bertujuan untuk membangun model machine learning sederhana menggunaka
 
 ---
 
-## 📌 Daftar Isi
-- [📊 Dataset](#-dataset)
-- [⚙️ Teknologi yang Digunakan](#️-teknologi-yang-digunakan)
-- [🚀 Cara Menjalankan Proyek](#-cara-menjalankan-proyek)
-- [📈 Alur Kerja Model](#-alur-kerja-model)
-- [🌐 Demo Aplikasi Streamlit](#-demo-aplikasi-streamlit)
-- [📁 Struktur Folder](#-struktur-folder)
-- [🧠 Hasil & Kesimpulan](#-hasil--kesimpulan)
-- [📎 Lisensi](#-lisensi)
-
----
-
 ## 📊 Dataset
 
 Dataset yang digunakan adalah **Boston Housing Dataset**, berisi informasi mengenai berbagai fitur perumahan di daerah Boston, seperti:
@@ -26,7 +14,7 @@ Dataset yang digunakan adalah **Boston Housing Dataset**, berisi informasi menge
 - Pajak properti (`TAX`)
 - Dan lainnya...
 
-📥 Sumber dataset: [Kaggle - Boston Housing Dataset](https://www.kaggle.com/datasets/)
+📥 Sumber dataset: [Kaggle - Boston Housing Dataset](https://www.kaggle.com/datasets/altavish/boston-housing-dataset)
 
 ---
 
@@ -46,8 +34,8 @@ Dataset yang digunakan adalah **Boston Housing Dataset**, berisi informasi menge
 ## 🚀 Cara Menjalankan Proyek
 
 ### 1. Clone repository:
-git clone https://github.com/username/prediksi-harga-rumah.git
-cd prediksi-harga-rumah
+git clone https://github.com/vierkzme/home-price-prediction
+cd prediction-app
 
 ### 2. Install dependencies:
 pip install -r requirements.txt
