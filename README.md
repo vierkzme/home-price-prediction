@@ -76,7 +76,6 @@ Model regresi linier menghasilkan R² Score ~ 0.74, yang berarti sekitar 74% var
 Streamlit mempermudah proses uji coba model secara real-time oleh pengguna non-teknis.
 Proyek ini cocok untuk pemula dalam memahami alur kerja end-to-end machine learning.
 
-📎 Lisensi
-Proyek ini dirilis dengan MIT License — silakan digunakan, dimodifikasi, dan dibagikan dengan bebas.
-
-Dibuat dengan ❤️ oleh Ardy Nugroho sebagai bagian dari portfolio data science pribadi.
+📄 License
+MIT License © 2025 – vierkzme
+silakan digunakan, dimodifikasi, dan dibagikan dengan bebas.
